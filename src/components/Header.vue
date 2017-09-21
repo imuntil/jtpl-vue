@@ -1,6 +1,6 @@
 <template>
-  <div class="normal j-footer">
-
+  <div class="normal j-header">
+    page header
   </div>
 </template>
 <script>
