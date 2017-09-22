@@ -1,2 +1,58 @@
 @import "./reset.css";
 @import "./declaration";
+
+html, body {
+  height: 100%;
+}
+
+.common-section {
+  width: $max-width;
+  margin: 0 auto;
+  overflow: hidden;
+}
+@media screen and (min-width: 1000px) {
+  .common-section {
+    width: 85%;
+    max-width: $max-width;
+  }
+}
+@media screen and (max-width: 999px) {
+  .common-section {
+    width: 100%;
+    max-width: $middle-width;
+  }
+}
+[v-cloak] {
+  display: none;
+}
+.auto-img img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.main-body {
+  width: 100%;
+  min-height: calc(100% - 280px);
+  background-color: #f4f4f4;
+}
+
+
+
+/**
+for mobile
+ */
+@media screen and (max-width: 768px) {
+  html, body {
+    height: auto;
+    touch-action: none;
+    -webkit-overflow-scrolling : touch;
+  }
+  #app {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-body {
+    min-height: 500px;
+  }
+}

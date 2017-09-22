@@ -4,6 +4,7 @@
     <transition enterActiveClass="animated fadeIn" leaveActiveClass="animated fadeOut" mode="out-in">
       <router-view></router-view>
     </transition>
+    <vue-progress-bar></vue-progress-bar>
     <j-footer></j-footer>
   </div>
 </template>
@@ -27,6 +28,6 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: inherit;
 }
 </style>

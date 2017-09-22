@@ -10,6 +10,7 @@ import App from './App'
 import store from './store'
 
 import 'animate.css'
+import './styles/common.scss'
 
 Vue.config.productionTip = false
 Vue.use(VueProgressBar)

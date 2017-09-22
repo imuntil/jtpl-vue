@@ -23,14 +23,12 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
   outline: none;
+  line-height: 1.2;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block;
-}
-body {
-  line-height: 1.2;
 }
 ol, ul {
   list-style: none;
@@ -57,10 +55,6 @@ a:hover, a:active, a:focus {
 }
 
 
-html {
-  touch-action: none;
-  -webkit-overflow-scrolling : touch;
-}
 * {
   box-sizing: border-box;
 }
