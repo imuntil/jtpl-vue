@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <j-header></j-header>
+    <div class="placeholder"></div>
     <transition enterActiveClass="animated fadeIn" leaveActiveClass="animated fadeOut" mode="out-in">
       <router-view></router-view>
     </transition>
@@ -32,5 +33,13 @@
   }
   #app>div.animated {
     animation-duration: .5s;
+  }
+  .placeholder {
+    height: 80px;
+  }
+  @media screen and (max-width: 768px) {
+    .placeholder {
+      height: 60px;
+    }
   }
 </style>

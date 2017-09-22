@@ -54,6 +54,7 @@
     height: $h;
     line-height: $h;
     background-color: #d8d8d8;
+    position: fixed;
   }
   .nav-container, .nav-bar {
     height: inherit;

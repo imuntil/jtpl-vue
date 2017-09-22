@@ -21,7 +21,7 @@
     background-color: #000;
   }
   .test {
-    line-height: 300px;
+    line-height: 500px;
     color: #ffffff;
   }
   @media screen and (max-width: 768px) {
@@ -31,12 +31,16 @@
   }
 </style>
 <style type="text/scss" lang="scss">
+  .top-banner,
+  .el-carousel__container,
+  .el-carousel__item {
+    height: 500px;
+  }
   @media screen and (max-width: 768px) {
     .normal {
+      .top-banner,
+      .el-carousel__container,
       .el-carousel__item {
-        height: 200px;
-      }
-      .top-banner {
         height: 200px;
       }
     }
